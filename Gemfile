@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-ruby '2.3.3'
+#ruby '2.3.3'
 
 gem 'rails', '4.2.7.1'
 gem 'pg', '~> 0.15'
@@ -14,6 +14,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec-rails'
+end
+
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
 end
 
 group :development do
